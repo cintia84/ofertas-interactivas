@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'opensans', sans-serif;
+    background: #dfe2df;
+}
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tabla{
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid #111863;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #7a3cad;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #9231aa;
+  
+}
+.tabla>h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    
+}
+.tabla img{
+    width: 64px;
+    margin-bottom: 35px;
+}
+.tabla > p{
+    display: block;
+    margin-bottom: 20px;
+}
+.boton{
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: #a5f059;
+    text-decoration: none;
+    color: #343759;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+.tabla:hover{
+   background: #2732aa;
+    color: #f1f1f2;
+    transition: .5s all;
+    transform: scaleX(1.1);
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .tabla{
+        width: 45%;
+        max-width: none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+        
+    }
+    }
+@media screen and (max-width: 700px) {.tabla{
+        width: 45%;
+        padding: 30px;
+        
+    }
+    .tabla > h2{
+       margin-top: 40px;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .tabla{
+        width: 85%;
+        padding: 20px;
+        
+    }
+    .tabla > h2{
+       margin-top: 40px;
+    }
+    
+}
+
